@@ -1,11 +1,75 @@
 {
-    "about": 
+    "landing":
     {
-        "who": 
+        "blurb":
         [
             "We are really pleased -- and always surprised -- that you found us.",
             "As the only Internet Web Site dedicated solely to the advanced education of the world's BBQ cooks through home-study, we aren't exactly a household name – yet.",
             "We are happy that you stopped by to learn more about our one and only product: The Master BBQ School which retails for only $299."
+        ], 
+        "techniques":
+        [
+            "teaching techniques not recipes"
         ]
-    } 
+    },
+    "about": 
+    {
+        "who": 
+        {
+            "instructor":
+            [
+                "a few lines about john (take from the course book)"
+            ],
+            "heritage":
+            [
+                "A few lines about the courses history (taken from the course book)"
+            ]
+        },
+        "what":
+        [
+            "Over the past 22 years we have taught more than 2,300 students in groups and as individuals and have graduated",
+            "the only 365 Certified Master BBQ Cooks (MBBQ) in the world.",
+            "The Master BBQ School is designed to help all cooks acquire new BBQ skills or improve their current outdoor cooking techniques.",
+            "The home-study course teaches the major BBQ cooking formats including direct/indirect grilling and slow-wood-smoke cooking.",
+            "Students score their own cooking and appoint Personal BBQ Judges who also score the meats.",
+            "Students must complete all 24 exercises and answer an open-book, True-or-False quiz for each of eight lessons.",
+            "The Score Sheets, Quizzes and Exercise Reporting Forms are sent to us to evaluate.",
+            "Completion of the course is required within one calendar year after we receive your first lesson.",
+            "Graduates receive a Master BBQ Cook Certificate and a letter confirming their graduation."
+        ],
+        "credentials":
+        [
+            "The American Culinary Federation has approved The Master BBQ School for 50 hours of Continuing Education Credits.",
+            "The ACF certifies all chefs in the U.S. and The Master BBQ School is the only home-study BBQ course that has received the federation's approval.",
+            "The school has also been reviewed for accuracy and approved by John Marcy, PhD, Professor and Poultry Processing Specialist, Center of Excellence for Poultry Science, The University of Arkansas Division of Agriculture in Fayetteville, AR."
+        ]
+
+    },
+    "testimonials":
+    [
+        {
+            "name": "name",
+            "date": "date",
+            "body": 
+            [
+                "this is a testimonial"
+            ]
+        }
+    ],
+    "Corse":
+    {
+        "learning":
+        [
+            "heres what you'll learn"
+        ],
+        "materials":
+        [
+            "this is what your buying"
+        ]
+    }, 
+    "order":
+    {
+        "price": "$299",
+        "shipping": "this is a disclaimer"
+    }
 }
