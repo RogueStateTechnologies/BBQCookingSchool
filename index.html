@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBQ Cooking School</title>
-</head>
-<body>
-    <header>
-        <div class="container" id="nav-bar">
-            <div class="container nav-button">
-                <a onclick="renderLanding()" id="landing"><img src="" alt="BBQ Cooking School Logo"></a>
-            </div>
-            <div class="container nav-button" id="about">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Laila">
+        <title>BBQ Cooking School</title>
+    </head>
+    <body>
+        <header class="container" id="nav-bar">
+            <!-- <div class="nav-button">
+                <a id="landing" onclick="renderLanding()"><img src="" alt="">BBQ Cooking School</a>
+            </div> -->
+            <div class="nav-button" id="about">
                 <a onclick="renderAbout()">About</a>
             </div>
-            <div class="container nav-button" id="testimonials">
+            <div class="nav-button" id="testimonials">
                 <a onclick="renderTestimonials()">Testimonials</a>
             </div>
-            <div class="container nav-button" id="course">
+            <div class="nav-button" id="course">
                 <a onclick="renderCourse()">Course</a>
             </div>
-            <div class="container nav-button" id="order">
-                <a onclick="renderOrder()">Order</a>
+            <div class="nav-button" id="order">
+                <a onclick="renderOrder()">Order</a>            
             </div>
-            <div class="container nav-button" id="contact">
+            <div class="nav-button" id="contact">
                 <a onclick="renderContact()">Contact</a>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="container" id="page">
-            <div class="contaier" id="heading">
-                <h1 class="heading"></h1>
-            </div>
-            <div class="contaier" id="sub-heading">
-                <h3 class="sub"></h3>
-            </div>
-            <div class="container" id="body">
-                <div class="container" id="text">
+        </header>
+        <main>
+            <div class="container" id="page">
+                <div class="contaier" id="heading">
+                    <h1 class="heading"></h1>
+                </div>
+                <div class="contaier" id="sub-heading">
+                    <h3 class="sub"></h3>
+                </div>
+                <div class="container" id="body">
+                    <div class="container" id="text">
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="container" id="location">
-            <span class="footer-text" id="address1">1650 Fillmore St.</span>
-            <span class="footer-text" id="address2">Denver, CO</span>
-            <span class="footer-text" id="address3">80206-1588</span>
-        </div>
-        <div class="container" id="contact-info">
-            <span class="footer-text" id="phone">(303) 321-3375</span>
-            <a class="footer-text" id="email" href="mailto:bbqcookingschool@hotmail.com"></a>
-        </div>
-        <div class="container" id="copyright">
-            <span class="footer-text" id="copyright">Copyright &copy; BBQCookingSchool.com</span>
-        </div>
-        <div class="container" id="footer-logo">
-            <img src="" alt="">
-            <span class="footer-text" id="footer-tag">BBQCookingSchool.com</span>
-        </div>
-        <div class="container" id="designer-logo">
-            <img src="" alt="">
-            <span class="footer-text" id="designer-tag"> RogueStateTechnologies</span>
-        </div>
-        <div class="container" id="hosting-logo">
-            <img src="" alt="">
-            <span class="footer-text" id="hosting-tag">GitHub</span>
-        </div>
-    </footer>
-    <script src="./assets/scripts/index.js"></script>
-</body>
+        </main>
+        <footer class="container">
+            <div class="container" id="location">
+                <span class="footer-text" id="address1">1650 Fillmore St.</span>
+                <span class="footer-text" id="address2">Denver, CO</span>
+                <span class="footer-text" id="address3">80206-1588</span>
+            </div>
+            <div class="container" id="contact-info">
+                <span class="footer-text" id="phone">(303) 321-3375</span>
+                <a class="footer-text" id="email" href="mailto:bbqcookingschool@hotmail.com">bbqcookingschool@hotmail.com</a>
+            </div>
+            <div class="container" id="copyright">
+                <span class="footer-text" id="copyright">Copyright &copy; BBQCookingSchool.com</span>
+            </div>
+            <div class="container" id="tags">
+                <div class="container" id="designer-logo">
+                    <img src="" alt="">
+                    <span class="footer-text" id="designer-tag">Designed By Rogue State Technologies</span>
+                </div>
+                <div class="container" id="hosting-logo">
+                    <img src="" alt="">
+                    <span class="footer-text" id="hosting-tag">Hosted By GitHub</span>
+                </div>
+            </div>
+            <script src="./assets/scripts/index.js"></script>
+        </footer>
+    </body>
 </html>

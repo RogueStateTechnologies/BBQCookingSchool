@@ -1,0 +1,58 @@
+body 
+{
+    background-color: #eae2b7;
+    font-family: 'Laila', serif;
+}
+
+.container
+{
+    display: flex;
+}
+
+#nav-bar
+{
+    font-family: 'Arbutus', serif;
+    margin: 1em;
+    justify-content: center;
+    column-gap: 1.5%;
+}
+
+.nav-button
+{
+    padding: 2px 5px 2px 5px;
+    margin: 0% .1%;
+    color: #003049;
+    background-color: #fcbf49;
+    border-radius: 5px 5px 5px 5px;
+}
+
+footer
+{
+    font-family: 'Arbutus', serif;
+    position: fixed;
+    bottom: 1%;
+    align-items: end;
+}
+
+#location
+{
+    flex-direction: column;
+    margin: 0% 1% 1% 1%;
+}
+#contact-info
+{
+    flex-direction: column;
+    margin: 0% 1% 1% 1%;
+}
+#copyright 
+{
+    margin: 0% 1% 1% 1%;
+}
+#tags
+{
+    position: fixed;
+    right: 3%;
+    margin: 0% 0% 1% 1%;
+    flex-direction: column;
+    align-items: end;
+}
