@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBQ Cooking School</title>
 </head>
-<body id="vue">
+<body>
     <header>
         <div class="container" id="nav-bar">
-            <div class="container nav-button" id="landing">
-                <a><img src="" alt="BBQ Cooking School Logo"></a>
+            <div class="container nav-button">
+                <a onclick="renderLanding()" id="landing"><img src="" alt="BBQ Cooking School Logo"></a>
             </div>
             <div class="container nav-button" id="about">
-                <a>About</a>
+                <a onclick="renderAbout()">About</a>
             </div>
             <div class="container nav-button" id="testimonials">
-                <a>Testimonials</a>
+                <a onclick="renderTestimonials()">Testimonials</a>
+            </div>
+            <div class="container nav-button" id="course">
+                <a onclick="renderCourse()">Course</a>
             </div>
             <div class="container nav-button" id="order">
-                <a>Order</a>
+                <a onclick="renderOrder()">Order</a>
             </div>
             <div class="container nav-button" id="contact">
-                <a>Contact</a>
+                <a onclick="renderContact()">Contact</a>
             </div>
         </div>
     </header>
@@ -30,10 +33,10 @@
             <div class="contaier" id="heading">
                 <h1 class="heading"></h1>
             </div>
+            <div class="contaier" id="sub-heading">
+                <h3 class="sub"></h3>
+            </div>
             <div class="container" id="body">
-                <div class="contaier" id="sub-heading">
-                    <h3 class="sub-heading"></h3>
-                </div>
                 <div class="container" id="text">
                 </div>
             </div>
