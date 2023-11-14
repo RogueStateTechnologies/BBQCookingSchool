@@ -10,6 +10,8 @@ async function fetchJson()
 
 fetchJson();
 
+addEventListener("DOMContentLoaded", renderLanding());
+
 function renderLanding() 
 {
     let blurbP = document.createElement("p");
