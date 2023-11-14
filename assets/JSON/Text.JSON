@@ -4,12 +4,16 @@
         "blurb":
         [
             "We are really pleased -- and always surprised -- that you found us.",
-            "As the only Internet Web Site dedicated solely to the advanced education of the world's BBQ cooks through home-study, we aren't exactly a household name – yet.",
+            "As the only Internet Web Site dedicated solely to the advanced education of the world's BBQ cooks through home-study,",
+             "we aren't exactly a household name – yet.",
             "We are happy that you stopped by to learn more about our one and only product: The Master BBQ School which retails for only $299."
         ], 
         "techniques":
         [
-            "teaching techniques not recipes"
+            "Here at BBQCookingSchool.com we are",
+            "teaching techniques not recipes",
+            "Our training is based on in-the-pit, hands-on techniques designed to teach you the \"What\" and \"Why\"", 
+            "of direct and indirect grilling and classic wood-smoked BBQ, not just how to put together recipes."
         ]
     },
     "about": 
@@ -18,11 +22,18 @@
         {
             "instructor":
             [
-                "a few lines about john (take from the course book)"
+                "The course instructor, John F. Head is a Certified Master BBQ Cook, ",
+                "a member in good standing with the National BBQ Association (NBBQA),",
+                "the Kansas City BBQ Society (KCBS), and the International Association of Culinary Professionals (IACP).",
+                "He is also a certified KCBS judge with nearly two dozen contests under his belt (pun intended).",
+                "He has also helped open eight BBQ restaurants through his work as a professional consultant."
             ],
             "heritage":
             [
-                "A few lines about the courses history (taken from the course book)"
+                "John has been cooking since 1952 and became a Certified Master BBQ Cook in 1999.",
+                "From 1999 to early 2009 he administered the original ",
+                "The Culinary Institute of Smoke-Cooking's Master BBQ Cooking School ",
+                "During that time John taught 90 of the then 92 Certified Master BBQ Cooks in the world."
             ]
         },
         "what":
@@ -48,11 +59,62 @@
     "testimonials":
     [
         {
-            "name": "name",
-            "date": "date",
+            "name": "Bob Vander Woude",
             "body": 
             [
-                "this is a testimonial"
+                "... although I've smoked plenty of great briskets, pork butts, ribs, etc., ",
+                "taking your your class certainly kicked up my game... ",
+                "I highly recommend this course for anyone wanting to improve their BBQing techniques and results..."
+            ]
+        },
+        {
+            "name": "Robert Nixon",
+            "body": 
+            [
+                "I liked the rub sections... ",
+                "The ones I used were great. ",
+                "This is an actual ACF course and gave me much more expertise doing barbecuing and smoking."
+            ]
+        },
+        {
+            "name": "Jason Nauert",
+            "body": 
+            [
+                "... I would recommend the school because it gave me a real opportunity",
+                "to focus on my cooking methods and correct them quickly..."
+            ]
+        },
+        {
+            "name": "Daniel Drumlake",
+            "body":
+            [
+                "... The class was absolutely worth the time and cost, ",
+                "it's one of the few courses where you actually worked for the CECs you received..."
+            ]
+
+        },
+        {
+            "name": "Chef Steven E Sterritt",
+            "body":
+            [
+                "... I am a Certified Chef de Cuisine through the ACF and an Executive Chef... ",
+                "I will absolutely recommend this course to all my colleagues... "
+            ]
+        },
+        {
+            "name": "Charity Tatro",
+            "body":
+            [
+                "... I would recommend the school because it forced me to cook things on a time line I wouldn't have necessarily tried. ",
+                "... I look forward to serving good food to friends and family!"
+            ]
+        },
+        {
+            "name": "Joseph Ward",
+            "body": 
+            [
+                "... I enjoyed the course very much. ",
+                "It was challenging but I learned a lot concerning grilling and smoking meats..."
             ]
         }
     ],
