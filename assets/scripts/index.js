@@ -1,5 +1,7 @@
 let json;
 
+StartUp();
+
 async function fetchJson()
 {
     const response = await fetch("./assets/JSON/Text.JSON")
@@ -8,9 +10,11 @@ async function fetchJson()
 
 }
 
-fetchJson();
-
-addEventListener("DOMContentLoaded", renderLanding());
+async function StartUp() 
+{
+    await fetchJson();
+    addEventListener("DOMContentLoaded", renderLanding());  
+}
 
 function renderLanding() 
 {
