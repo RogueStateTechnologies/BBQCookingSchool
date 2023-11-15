@@ -77,12 +77,16 @@ function renderTestimonials()
     text.innerHTML = "";
 
     heading.innerHTML = "What people are saying";
-    
-    let testimonialDiv = document.createElement("div");
 
-    testimonialDiv.className = "container";
-    testimonialDiv.appendChild(formatTestimonials());
-    text.appendChild(testimonialDiv);
+    json["testimonials"].forEach(testimonial => {
+        let testimonialDiv = document.createElement("div");
+        testimonialDiv.className = "container";
+        testimonialDiv.appendChild(formatTestimonial(testimonial));
+        text.appendChild(testimonialDiv);
+    });
+    
+    // testimonialDiv.appendChild(formatTestimonials());
+    // text.appendChild(testimonialDiv);
 }
 
 function renderCourse() 
@@ -148,14 +152,17 @@ function formatTextArray(toBeFormatted) {
     return body;
 }
 
-function formatTestimonials() 
+function formatTestimonial(testimonial) 
 {
-    let testimonials = document.createElement("ul");
-    json["testimonials"].forEach(testimonial => {
-        let newTestimonial = document.createElement("li");
-        newTestimonial.className = "testimonial"
-        newTestimonial.innerHTML = `${testimonial["name"]} <br> ${testimonial["date"]} <br> ${formatTextArray(testimonial.body)}`
-        testimonials.appendChild(newTestimonial);
-    });   
-    return testimonials; 
+    let testimonialContent = document.createElement("div");
+    let testimonialName = document.createElement("h4");
+    let testimonialBody = document.createElement("p");
+
+    testimonialName.innerHTML = testimonial["name"];
+    testimonialBody.innerHTML = formatTextArray(testimonial["body"]);
+
+    testimonialContent.appendChild(testimonialName);
+    testimonialContent.appendChild(testimonialBody);
+
+    return testimonialContent;
 }
