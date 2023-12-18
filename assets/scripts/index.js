@@ -36,7 +36,7 @@ function renderLanding()
     
     blurbDiv.id = "landing-blurb";
     
-    blurbP.className = "blurb";
+    blurbP.className = "blurb";    
     
     blurbP.innerHTML = formatTextArray(json["landing"]["blurb"]);
     
