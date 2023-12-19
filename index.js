@@ -39,3 +39,12 @@ function changeTestimonial(direction)
         active.className = "testimonial active";
     }
 }
+
+function showArticle(article) 
+{
+    let active = document.getElementsByClassName("about active")[0];
+    let newActive = document.getElementById(article);
+    
+    active.className = "about inactive";
+    newActive.className = "about active"
+}
