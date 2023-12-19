@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Laila">
         <title>BBQ Cooking School</title>
@@ -11,40 +11,190 @@
     <body>
      <header>
         <nav>
-            <a href="about">
-                <img id="nav-logo" src="" alt="">
+            <a class="nav-link" id="logo-link" href="#about">
+                <h2>BBQCookingSchool.com LLC</h2>
+                <h6>Where the finest cooks learn to make world-class BBQ!</h6>
             </a>
             <div id="nav-links">
-                <a class="nav-link" href="about">About</a>
-                <a class="nav-link" href="course">Course</a>
-                <a class="nav-link" href="order">Order</a>
+                <a class="nav-link active" href="#about" onclick="updateNav('about')">About</a>
+                <a class="nav-link" href="#course" onclick="updateNav('course')">Course</a>
+                <a class="nav-link" href="#testimonials" onclick="updateNav('testimonials')">Testimonials</a>
+                <a class="nav-link" href="#order" onclick="updateNav('order')">Order</a>
             </div>
         </nav>
      </header>
      <main>
         <section id="about">
-
+            <div id="about-links">
+                <a class="about-link" onclick="showArticle('who')"><strong>Who are we?</strong></a>
+                <a class="about-link" onclick="showArticle('what')"><strong>What do we do?</strong></a>
+                <a class="about-link" onclick="showArticle('accreditation')"><strong>Who approves of this course?</strong></a>
+                <a class="about-link" onclick="showArticle('consulting')"><strong>Consulting Services</strong></a>
+                <a class="about-link" onclick="showArticle('john')"><strong>About John</strong></a>
+            </div>
+            <article class="active" id="who">
+                The only website dedicated solely to the advanced 
+                education of the world's BBQ cooks through home-study.
+                The course is administered by John F. Head, MBBQ.
+                This course has taught a past <strong>California State Champion</strong> 
+                and a <strong>Memphis In May Grand Champion</strong>.   
+            </article>
+            <article class="inactive" id="what">
+                Over the past 22 years we have taught more 
+                than 2,300 students in groups and as individuals.
+                We have also graduated the only 365 certified 
+                Master BBQ Cooks in the world.
+            </article>
+            <article class="inactive" id="accreditation">
+                <strong>The American Culinary Federation</strong> 
+                has approved <strong>The Master BBQ School</strong> for
+                <strong>50 hours of continuing education credits</strong>. 
+                The ACF certifies all chefs in the U.S.
+                <strong>The Master BBQ SChool</strong> is the only 
+                home-study BBQ course to receive the federation's approval.
+                The course has also been reviewed and approved by 
+                <strong>John Marcy, PhD, Professor and Poultry Processing Specialist,
+                 The University of Arkansas Division of Agriculture</strong>
+            </article>
+            <article class="inactive" id="services">
+                We also offer <strong>BBQ Consultant</strong> services to help 
+                start your BBQ restaurant or catering business,
+                 or if you want expand or improve your BBQ offerings.
+            </article>
+            <article class="inactive" id="john">
+                John F. Head has over 45 years of BBQ experience and has 
+                consulted with over three dozen restaurants on world-class BBQ techniques.
+                He is also a former Marine and Vietnam War Veteran. 
+            </article>
         </section>
         <section id="course">
-
+            <h3>Teaching techniques, not recipes</h3>
+            <article>
+                <h5>Who is this course for?</h5>
+                <strong>The Master BBQ School</strong> has been written to greatly 
+                improve the skills of all BBQ enthusiasts 
+                from the backyard barbequer to professional chefs or competitive cooks.
+            </article>
+            <article>
+                <h5>What does the course teach?</h5>
+                <strong>The Master BBQ School</strong> is an eight-lesson 
+                correspondence course that you study at home using your own 
+                cooking equipment and at your own pace.
+                The only equipment needed is a grill and a dedicated smoker.
+                The course will teach you the core techniques need to master BBQ cooking, such as,
+                direct and indirect grilling and classic wood-smoked BBQ.
+                The course also teaches how to judge and choose different cuts of meat.
+                After you've gone through the course you will have all the tools and knowledge you need
+                to start experimenting with different smoke woods, brines, rubs, and sauces to perfect your own styles and flavors.
+            </article>
+            <article>
+                <h5>What assistance is offered to students?</h5>
+                John is always available to answer questions and assist students in making 
+                this course a truly terrific experience.
+                Students that complete the course within one calender year from the time they send us 
+                the first lesson will be awarded a <strong>Master BBQ Cook Certificate</strong> and a 
+                <strong>Letter of Graduation</strong>. 
+            </article>
+            <article>
+                <strong>
+                    American Culinary Federation (ACF) certified chefs will also have earned 50 hours of Continuing
+                    Education Credit toward re-certification.
+                </strong>
+            </article>
+        </section>
+        <section id="testimonials">
+            <button id="previous-testimonial" onclick="changeTestimonial('back')"><</button>
+            <div id="testimonials-container">
+                <article class="active" id="testimonial-1">
+                    <h6>Bob Vaner Woude</h6>
+                    I highly recommend this course for anyone wanting to improve their BBQing techniques
+                    and expand their BBQing repertoire.
+                </article>
+                <article class="inactive" id="testimonial-2">
+                    <h6>Jason Nauert</h6>
+                    I Would recommend the school because it gave me a real opportunity
+                    to focus on my cooking methods and correct them quickly.  
+                </article>
+                <article class="inactive" id="testimonial-3">
+                    <h6>Daniel Drumlake</h6>
+                    The class was absolutely worth the time and cost, 
+                    it's one of the few courses where you actually worked 
+                    for the CECs you received. And the rub recipes were very good
+                </article>
+                <article class="inactive" id="testimonial-4">
+                    <h6>Chef Steven E Sterritt</h6>
+                    I am a Certified Chef de Cuisine through the ACF... 
+                    I will absolutely recommend this course to all my colleagues 
+                    as I really believe they can benefit from the self-guided course.
+                </article>
+                <article class="inactive" id="testimonial-5">
+                    <h6>Charity Tatro</h6>
+                    I would recommend the school because it forced me to 
+                    cook things on a time line I wouldn’t have necessarily tried.
+                </article>
+                <article class="inactive" id="testimonial-6">
+                    <span>Mark Wilson</span>
+                    I would recommend the school to even the weekend BBQ cook 
+                    because you can gain some valuable information 
+                    to produce quality BBQ for almost every palate. 
+                    As a chef, I feel this course has made me a better, 
+                    more versatile and well-rounded chef.
+                </article>
+                <article class="inactive" id="testimonial-8">
+                    <h6>Jeremy Halker</h6>
+                    I would absolutely recommend this school 
+                    to other chefs and backyard BBQers. 
+                    It certainly was worth the time, cost and effort to take the course.
+                </article>
+                <article class="inactive" id="testimonial-9">
+                    <h6>Danny Arturo</h6>
+                    I would recommend this course t anyone 
+                    because it is easy to follow and includes just about 
+                    everything anyone would want to know about grilling and BBQ.  
+                    I am a CEC and would tell any chef or backyard 
+                    cooker about the class and I do.
+                </article>
+                <article class="inactive" id="testimonial-10">
+                    <h6>Paul K, C.E.C</h6>
+                    I have been chef for over 30 years and I 
+                    was looking for a class to aid in my CEC recertification. 
+                    I came across the Master  BBQ School. 
+                    The program is a great addition to my skills background
+                </article>
+            </div>
+            <button id="next-testimonial" onclick="changeTestimonial('forward')">></button>
         </section>
         <section id="order">
-
+            <h5>Order Now!</h5>
+            <span>Get all course materials for only $299!</span>
+            <button>Order Now</button>
         </section>
      </main>
     <footer>
-        <section id="map">
-
-        </section>
-        <section id="contact">
-
-        </section>
-        <section id="location">
-
-        </section>
-        <section id="branding">
-            
-        </section>
+        <article id="map">
+            <h6>Site Map</h6>
+            <a href="about"></a>
+            <a href="course"></a>
+            <a href="order"></a>
+        </article>
+        <article id="contact">
+            <h6>Contact Us</h6>
+            <a href="tel:+">Call</a>
+            <a href="mailto:">Email</a>
+        </article>
+        <article id="location">
+            <h6>Location</h6>
+            <br>
+                1111 Street Rd.<br />
+                Denver, CO 11111<br />
+                United States of America<br />
+            </address>
+        </article>
+        <article id="branding">
+            <span>&copy; 2023 BBQCookingSChool.com</span>
+            <span>Design by Rogue State Technologies</span>
+            <span>Powered By <a href="https://www.godaddy.com">GoDaddy</a> web hosting</span>
+        </article>
     </footer>
     </body>
 </html>
