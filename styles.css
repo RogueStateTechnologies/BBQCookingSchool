@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 *
 {
     margin: 0;
@@ -9,6 +12,9 @@ html
     --bright-color: #D64933;
     --soft-color: #AAA694;
 
+    --accent-font: 'Sancreek';
+    --main-font: 'Patrick Hand';
+
     scroll-behavior: smooth;
 }
 
@@ -17,6 +23,7 @@ body
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    font-family: var(--main-font);
 }
 
 nav
@@ -37,14 +44,33 @@ footer
 {
     display: grid;
     grid-template-areas: 
-    "map contact location"
-    "branding branding branding";
-
+    "map contact location branding";
+    background-color: var(--dark-color);
 }
 
 footer > div
 {
     padding: 3rem;
+}
+
+footer > div > a
+{
+    color: var(--soft-color);
+}
+
+footer > div > a:visited
+{
+    color: var(--soft-color);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: var(--accent-font), serif;
+}
+
+li
+{
+    margin: 1rem auto;
 }
 
 .inactive
@@ -65,7 +91,9 @@ footer > div
 #nav-links
 {
     grid-area: span 2;
+    margin-bottom: 1rem;
     display: flex;
+    align-self: last baseline;
     justify-content: space-evenly;
 }
 
@@ -96,11 +124,13 @@ footer > div
 {
     margin: 5rem;
     text-decoration: none;
+    font-size: larger;
+    transition: font-size 1s;
 }
 
 .about-link:hover
 {
-   scale: 1 1.5;
+   font-size: x-large;
 }
 
 #course
@@ -108,7 +138,7 @@ footer > div
     background-color: var(--dark-color);
 }
 
-#course > h3
+#course-heading
 {
     padding: 5rem 5rem;
 }
@@ -149,11 +179,55 @@ footer > div
     grid-area: next;
 }
 
+#order
+{
+    display: grid;
+    background-color: var(--soft-color);
+}
+
+#order > article
+{
+    display: grid;
+    justify-self: center;
+    margin: auto 5rem;
+}
+
+#order > article > h2, h6
+{
+    margin: 1rem auto;
+    justify-self: center;
+}
+
+#order-link-block
+{
+    display: grid;
+    grid-template-areas: 
+    "h3 a";
+}
+
+#order-link-block > h3
+{
+    align-self: center;
+    justify-self: center;
+}
+
+#order-link
+{
+    height: 3rem;
+    width: 7rem;
+    align-self: center;
+    background-color: var(--bright-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #map
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 
 #contact
@@ -162,13 +236,14 @@ footer > div
     flex-direction: column;
 }
 
-#location
+#location > span
 {
-
+    margin: 1rem auto
 }
 
 #branding
 {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
