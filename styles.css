@@ -32,6 +32,7 @@ nav
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: var(--dark-color);
+    padding: 1rem;
 }
 
 section
@@ -102,6 +103,7 @@ button
 #logo-link
 {
     text-decoration: none;
+    margin-left: 2rem;
 }
 
 #nav-links
