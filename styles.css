@@ -108,12 +108,15 @@ li
 #about > article
 {
     margin-top: 25vh;
+    margin-right: 5rem;
     font-size: xx-large;
+    padding-left: 5rem;
 }
 
 #about-links
 {
     color: var(--bright-color);
+    margin-right: 3rem;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -124,13 +127,13 @@ li
 {
     margin: 5rem;
     text-decoration: none;
-    font-size: larger;
+    font-size: large;
     transition: font-size 1s;
 }
 
 .about-link:hover
 {
-   font-size: x-large;
+   font-size: larger;
 }
 
 #course
