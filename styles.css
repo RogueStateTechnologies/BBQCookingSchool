@@ -153,6 +153,8 @@ button
 
 #course
 {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
     background-color: var(--dark-color);
     font-size: x-large;
     color: var(--soft-color);
