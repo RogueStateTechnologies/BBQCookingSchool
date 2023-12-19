@@ -33,6 +33,20 @@ section
     padding: 0;
 }
 
+footer
+{
+    display: grid;
+    grid-template-areas: 
+    "map contact location"
+    "branding branding branding";
+
+}
+
+footer > div
+{
+    padding: 3rem;
+}
+
 .inactive
 {
     display: none;
@@ -133,4 +147,28 @@ section
 #next-testimonial
 {
     grid-area: next;
+}
+
+#map
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#location
+{
+
+}
+
+#branding
+{
+    display: flex;
+    justify-content: space-evenly;
 }
