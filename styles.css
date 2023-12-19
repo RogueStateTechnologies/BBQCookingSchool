@@ -24,6 +24,7 @@ body
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: var(--main-font);
+    color: var(--dark-color);
 }
 
 nav
@@ -35,7 +36,7 @@ nav
 
 section
 {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -43,14 +44,16 @@ section
 footer
 {
     display: grid;
-    grid-template-areas: 
-    "map contact location branding";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
     background-color: var(--dark-color);
+    color: var(--soft-color);
 }
 
 footer > div
 {
-    padding: 3rem;
+    margin: auto 1rem 1rem;
+    width: fit-content;
 }
 
 footer > div > a
@@ -71,6 +74,19 @@ h1, h2, h3, h4, h5, h6
 li
 {
     margin: 1rem auto;
+}
+
+button
+{
+    height: inherit;
+    width: 3rem;
+    align-self: center;
+    height: 3rem;
+    border: 1px;
+    border-radius: 50%;
+    background-color: var(--soft-color);
+    box-shadow: none;
+    margin: auto 1rem;
 }
 
 .inactive
@@ -100,23 +116,20 @@ li
 #about
 {
     display: grid;
-    grid-template-areas: 
-    "links active";
+    grid-template-columns: auto 1fr;
     background-color: var(--soft-color);
 }
 
 #about > article
 {
-    margin-top: 25vh;
-    margin-right: 5rem;
+    align-self: center;
     font-size: xx-large;
-    padding-left: 5rem;
+    padding: 5rem;
 }
 
 #about-links
 {
     color: var(--bright-color);
-    margin-right: 3rem;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -139,52 +152,48 @@ li
 #course
 {
     background-color: var(--dark-color);
+    font-size: x-large;
+    color: var(--soft-color);
 }
 
 #course-heading
 {
-    padding: 5rem 5rem;
+    font-size: xx-large;
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+
+.course-headings
+{
+    font-size: x-large;
+    padding: 1rem;
 }
 
 #course > article
 {
-    margin: 10vh 5vw;
-}
-
-#testimonials
-{
-    display: grid;
-    grid-template-areas: 
-    "previous articles next";
+    margin: 2rem 5vw;
 }
 
 #testimonials-container
 {
-    grid-area: articles;
+    display: grid;
+    height: 10rem;
+    grid-template-columns: auto 1fr auto;
+    background-color: var(--bright-color);
 }
 
-#testimonials-container > .active
+.testimonial
 {
-    display: flex;
-    flex-direction: column;
-    width: 70vh;
-    margin: 40vh auto;
-    font-size: 25px;
-}
-
-#previous-testimonial
-{
-    grid-area: previous;
-}
-
-#next-testimonial
-{
-    grid-area: next;
+    align-self: center;
+    justify-self: center;
+    font-size: x-large;
+    width: 75vw;
 }
 
 #order
 {
     display: grid;
+    grid-template-rows: 10rem auto auto;
     background-color: var(--soft-color);
 }
 
@@ -192,13 +201,17 @@ li
 {
     display: grid;
     justify-self: center;
-    margin: auto 5rem;
+    margin: 2rem 3rem;
 }
 
 #order > article > h2, h6
 {
-    margin: 1rem auto;
     justify-self: center;
+}
+
+#order > article > ul
+{
+    width: 70vw;
 }
 
 #order-link-block
@@ -206,6 +219,7 @@ li
     display: grid;
     grid-template-areas: 
     "h3 a";
+    margin-bottom: 3rem;
 }
 
 #order-link-block > h3
@@ -246,7 +260,13 @@ li
 
 #branding
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-self: center;
+    align-self: last baseline;
+    grid-column: span 3;
+}
+
+#branding > span
+{
+    margin: auto 6em;
+    margin-bottom: 2rem;
 }
