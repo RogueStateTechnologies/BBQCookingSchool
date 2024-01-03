@@ -26,28 +26,39 @@
         </nav>
      </header>
      <main>
-        <section id="about">
-            <div id="about-links">
-                <a class="about-link" onclick="showArticle('who')"><strong>Who are we?</strong></a>
-                <a class="about-link" onclick="showArticle('what')"><strong>What do we do?</strong></a>
-                <a class="about-link" onclick="showArticle('accreditation')"><strong>Who approves of this course?</strong></a>
-                <a class="about-link" onclick="showArticle('services')"><strong>Consulting Services</strong></a>
-                <a class="about-link" onclick="showArticle('john')"><strong>About John</strong></a>
-            </div>
-            <article class="about inactive" id="who">
+        <section class="page about" id="who">
+            <article class="blurb" id="school">
                 The only website dedicated solely to the advanced 
                 education of the world's BBQ cooks through home-study.
                 The course is administered by John F. Head, MBBQ.
                 This course has taught a past <strong>California State Champion</strong> 
                 and a <strong>Memphis In May Grand Champion</strong>.   
             </article>
-            <article class="about inactive" id="what">
+            <article class="blurb" id="teacher">
+                John F. Head has over 45 years of BBQ experience and has 
+                consulted with over three dozen restaurants on world-class BBQ techniques.
+                He is also a former Marine and Vietnam War Veteran. 
+            </article>
+            <article class="blurb" id="award-winners">
+
+            </article>
+        </section>
+        <section class="page" id="what">
+            <article class="blurb" id="history">
                 Over the past 22 years we have taught more 
                 than 2,300 students in groups and as individuals.
                 We have also graduated the only 365 certified 
                 Master BBQ Cooks in the world.
             </article>
-            <article class="about active" id="accreditation">
+            <article class="blurb" id="students">
+
+            </article>
+            <article class="blurb" id="certified-masters">
+
+            </article>
+        </section>
+        <section class="page" id="accreditation">
+            <article class="blurb" id="acf-details">
                 <strong>The American Culinary Federation</strong> 
                 has approved <strong>The Master BBQ School</strong> for
                 <strong>50 hours of continuing education credits</strong>. 
@@ -58,25 +69,35 @@
                 <strong>John Marcy, PhD, Professor and Poultry Processing Specialist,
                  The University of Arkansas Division of Agriculture</strong>
             </article>
-            <article class="about inactive" id="services">
+            <article class="blurb" id="approval">
+            
+            </article>
+            <article class="blurb" id="reviewed">
+
+            </article>
+        </section>
+        <section class="page" id="services">
+            <article class="blurb" id="total-consults">
                 We also offer <strong>BBQ Consultant</strong> services to help 
                 start your BBQ restaurant or catering business,
                  or if you want expand or improve your BBQ offerings.
             </article>
-            <article class="about inactive" id="john">
-                John F. Head has over 45 years of BBQ experience and has 
-                consulted with over three dozen restaurants on world-class BBQ techniques.
-                He is also a former Marine and Vietnam War Veteran. 
+            <article class="blurb" id="offerings">
+
+            </article>
+            <article class="blurb" id="outreach">
+
             </article>
         </section>
-        <section id="course">
-            <h3 id="course-heading">Teaching techniques, not recipes</h3>
+        <section class="page" id="audience">
             <article>
                 <h5 class="course-headings">Who is this course for?</h5>
                 <strong>The Master BBQ School</strong> has been written to greatly 
                 improve the skills of all BBQ enthusiasts 
                 from the backyard barbequer to professional chefs or competitive cooks.
             </article>
+        </section>
+        <section class="page" id="topics">
             <article>
                 <h5 class="course-headings">What does the course teach?</h5>
                 <strong>The Master BBQ School</strong> is an eight-lesson 
@@ -89,6 +110,8 @@
                 After you've gone through the course you will have all the tools and knowledge you need
                 to start experimenting with different smoke woods, brines, rubs, and sauces to perfect your own styles and flavors.
             </article>
+        </section>
+        <section class="page" id="assistance">
             <article>
                 <h5 class="course-headings">What assistance is offered to students?</h5>
                 John is always available to answer questions and assist students in making 
@@ -97,6 +120,8 @@
                 the first lesson will be awarded a <strong>Master BBQ Cook Certificate</strong> and a 
                 <strong>Letter of Graduation</strong>. 
             </article>
+        </section>
+        <section class="page" id="credit-hours">
             <article>
                 <strong>
                     American Culinary Federation (ACF) certified chefs will also have earned 50 hours of Continuing
@@ -104,67 +129,67 @@
                 </strong>
             </article>
         </section>
+        <section class="page" id="testimonials">
+            <button type="button" id="previous-testimonial" onclick="changeTestimonial('back')"><</button>
+            <article class="testimonial active" id="1">
+                <h6>Bob Vander Woude</h6>
+                I highly recommend this course for anyone wanting to improve their BBQing techniques
+                and expand their BBQing repertoire.
+            </article>
+            <article class="testimonial inactive" id="2">
+                <h6>Jason Nauert</h6>
+                I Would recommend the school because it gave me a real opportunity
+                to focus on my cooking methods and correct them quickly.  
+            </article>
+            <article class="testimonial inactive" id="3">
+                <h6>Daniel Drumlake</h6>
+                The class was absolutely worth the time and cost, 
+                it's one of the few courses where you actually worked 
+                for the CECs you received. And the rub recipes were very good
+            </article>
+            <article class="testimonial inactive" id="4">
+                <h6>Chef Steven E Sterritt</h6>
+                I am a Certified Chef de Cuisine through the ACF... 
+                I will absolutely recommend this course to all my colleagues 
+                as I really believe they can benefit from the self-guided course.
+            </article>
+            <article class="testimonial inactive" id="5">
+                <h6>Charity Tatro</h6>
+                I would recommend the school because it forced me to 
+                cook things on a time line I wouldn’t have necessarily tried.
+            </article>
+            <article class="testimonial inactive" id="6">
+                <h6>Mark Wilson</h6>
+                I would recommend the school to even the weekend BBQ cook 
+                because you can gain some valuable information 
+                to produce quality BBQ for almost every palate. 
+                As a chef, I feel this course has made me a better, 
+                more versatile and well-rounded chef.
+            </article>
+            <article class="testimonial inactive" id="7">
+                <h6>Jeremy Halker</h6>
+                I would absolutely recommend this school 
+                to other chefs and backyard BBQers. 
+                It certainly was worth the time, cost and effort to take the course.
+            </article>
+            <article class="testimonial inactive" id="8">
+                <h6>Danny Arturo</h6>
+                I would recommend this course t anyone 
+                because it is easy to follow and includes just about 
+                everything anyone would want to know about grilling and BBQ.  
+                I am a CEC and would tell any chef or backyard 
+                cooker about the class and I do.
+            </article>
+            <article class="testimonial inactive" id="9">
+                <h6>Paul K, C.E.C</h6>
+                I have been chef for over 30 years and I 
+                was looking for a class to aid in my CEC recertification. 
+                I came across the Master  BBQ School. 
+                The program is a great addition to my skills background
+            </article>
+            <button type="button" id="next-testimonial" onclick="changeTestimonial('forward')">></button>
+        </section>
         <section id="order">
-            <div id="testimonials-container">
-                <button type="button" id="previous-testimonial" onclick="changeTestimonial('back')"><</button>
-                <article class="testimonial active" id="1">
-                    <h6>Bob Vander Woude</h6>
-                    I highly recommend this course for anyone wanting to improve their BBQing techniques
-                    and expand their BBQing repertoire.
-                </article>
-                <article class="testimonial inactive" id="2">
-                    <h6>Jason Nauert</h6>
-                    I Would recommend the school because it gave me a real opportunity
-                    to focus on my cooking methods and correct them quickly.  
-                </article>
-                <article class="testimonial inactive" id="3">
-                    <h6>Daniel Drumlake</h6>
-                    The class was absolutely worth the time and cost, 
-                    it's one of the few courses where you actually worked 
-                    for the CECs you received. And the rub recipes were very good
-                </article>
-                <article class="testimonial inactive" id="4">
-                    <h6>Chef Steven E Sterritt</h6>
-                    I am a Certified Chef de Cuisine through the ACF... 
-                    I will absolutely recommend this course to all my colleagues 
-                    as I really believe they can benefit from the self-guided course.
-                </article>
-                <article class="testimonial inactive" id="5">
-                    <h6>Charity Tatro</h6>
-                    I would recommend the school because it forced me to 
-                    cook things on a time line I wouldn’t have necessarily tried.
-                </article>
-                <article class="testimonial inactive" id="6">
-                    <h6>Mark Wilson</h6>
-                    I would recommend the school to even the weekend BBQ cook 
-                    because you can gain some valuable information 
-                    to produce quality BBQ for almost every palate. 
-                    As a chef, I feel this course has made me a better, 
-                    more versatile and well-rounded chef.
-                </article>
-                <article class="testimonial inactive" id="7">
-                    <h6>Jeremy Halker</h6>
-                    I would absolutely recommend this school 
-                    to other chefs and backyard BBQers. 
-                    It certainly was worth the time, cost and effort to take the course.
-                </article>
-                <article class="testimonial inactive" id="8">
-                    <h6>Danny Arturo</h6>
-                    I would recommend this course t anyone 
-                    because it is easy to follow and includes just about 
-                    everything anyone would want to know about grilling and BBQ.  
-                    I am a CEC and would tell any chef or backyard 
-                    cooker about the class and I do.
-                </article>
-                <article class="testimonial inactive" id="9">
-                    <h6>Paul K, C.E.C</h6>
-                    I have been chef for over 30 years and I 
-                    was looking for a class to aid in my CEC recertification. 
-                    I came across the Master  BBQ School. 
-                    The program is a great addition to my skills background
-                </article>
-                <button type="button" id="next-testimonial" onclick="changeTestimonial('forward')">></button>
-            </div>
             <article id="lessons">
                 <h2>What you'll learn</h2>
                 <h6>
@@ -239,7 +264,7 @@
                 </div>
             </div>
         </section>
-     </main>
+    </main>
     <footer>
         <div id="map">
             <span>Site Map</span>
