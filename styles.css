@@ -274,3 +274,123 @@ button
     margin: auto 6em;
     margin-bottom: 2rem;
 }
+
+.icon
+{
+    display: none;
+}
+
+@media screen and (max-width: 500px) 
+{
+    body
+    {
+        max-width: 100vw;
+        font-size: medium;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    main
+    {
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    section
+    {
+        height: auto;
+        max-width: 100vw;
+        /* min-height: 100vh; */
+    }
+
+    article
+    {
+        font-size: medium;
+    }
+
+    .icon 
+    {
+        display: inline;
+    }
+
+    .nav-link
+    {
+        display: none;
+    }
+
+    #about-links
+    {
+        display: none;
+    }
+
+    #about
+    {
+        max-height: 75vh;
+    }
+
+    #about > article 
+    {
+
+        padding: 1rem;
+    }
+
+    #course-heading
+    {
+        font-size: large;
+        align-self: center;
+        padding: 1rem;
+    }
+
+    .course-headings
+    {
+        font-size: large;
+    }
+
+    #course
+    {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .testimonial
+    {
+        font-size: medium;
+        width: 70vw;
+    }
+
+    #testimonials-container
+    {
+        height: 10vh;
+    }
+
+    #course > article
+    {
+        margin: .5rem 5vw
+    }
+
+    #order > article
+    {
+        margin: 1rem 2rem;
+    }
+
+    #lessons > h2
+    {
+        font-size: medium;
+    }
+
+    #materials > h2
+    {
+        font-size: medium;
+    }
+
+    button
+    {
+        margin: .5rem .5rem;
+    }
+
+    #order
+    {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr;
+    }
+}
