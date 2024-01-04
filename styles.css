@@ -8,12 +8,12 @@
 }
 html
 {
-    --dark-color: #545863;
-    --bright-color: #D64933;
-    --soft-color: #AAA694;
+    --davys-gray: #545863ff;
+    --khaki: #aaa694ff;
+    --chili-red: #d64933ff;
 
-    --accent-font: 'Sancreek';
-    --main-font: 'Patrick Hand';
+    --sancreek: 'Sancreek';
+    --patrick-hand: 'Patrick Hand';
 
     scroll-behavior: smooth;
 }
@@ -23,374 +23,87 @@ body
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: var(--main-font);
-    color: var(--dark-color);
+    font-family: var(--patrick-hand);
+    color: var(--davys-gray);
 }
 
-nav
+header
 {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    background-color: var(--dark-color);
-    padding: 1rem;
+
 }
 
-section
+main
 {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+
 }
 
 footer
 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    background-color: var(--dark-color);
-    color: var(--soft-color);
+
 }
 
-footer > div
+.page
 {
-    margin: auto 1rem 1rem;
-    width: fit-content;
-}
+    height: 100vh;
+    
+    margin: 0;
+    padding: 0;
 
-footer > div > a
-{
-    color: var(--soft-color);
-}
-
-footer > div > a:visited
-{
-    color: var(--soft-color);
-}
-
-h1, h2, h3, h4, h5, h6
-{
-    font-family: var(--accent-font), serif;
-}
-
-li
-{
-    margin: 1rem auto;
-}
-
-button
-{
-    height: inherit;
-    width: 3rem;
-    align-self: center;
-    height: 3rem;
-    border: 1px;
-    border-radius: 50%;
-    background-color: var(--soft-color);
-    box-shadow: none;
-    margin: auto 1rem;
-}
-
-.inactive
-{
-    display: none;
-}
-
-.nav-link 
-{
-    color: var(--soft-color); 
-}
-
-#logo-link
-{
-    text-decoration: none;
-    margin-left: 2rem;
-}
-
-#nav-links
-{
-    grid-area: span 2;
-    margin-bottom: 1rem;
-    display: flex;
-    align-self: last baseline;
-    justify-content: space-evenly;
-}
-
-#about
-{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    background-color: var(--soft-color);
-}
-
-#about > article
-{
-    align-self: center;
     font-size: xx-large;
-    padding: 5rem;
 }
 
-#about-links
+.page#who
 {
-    color: var(--bright-color);
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: var(--khaki);
+    color: var(--davys-gray);
 }
 
-.about-link
+.page#heritage
 {
-    margin: 5rem;
-    text-decoration: none;
-    font-size: large;
-    transition: font-size 1s;
+    background-color: var(--davys-gray);
+    color: var(--chili-red);
 }
 
-.about-link:hover
+.page#audience
 {
-   font-size: larger;
+    background-color: var(--chili-red);
+    color: var(--khaki);
 }
 
-#course
+.page#accreditation
 {
-    display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
-    background-color: var(--dark-color);
-    font-size: x-large;
-    color: var(--soft-color);
+    background-color: var(--khaki);
+    color: var(--davys-gray);
 }
 
-#course-heading
+.page#services
 {
-    font-size: xx-large;
-    padding-top: 5rem;
-    padding-left: 10rem;
+    background-color: var(--davys-gray);
+    color: var(--chili-red);
 }
 
-.course-headings
+.page#topics
 {
-    font-size: x-large;
-    padding: 1rem;
+    background-color: var(--chili-red);
+    color: var(--khaki);
 }
 
-#course > article
+.page#certification
 {
-    margin: 2rem 5vw;
+    background-color: var(--khaki);
+    color: var(--davys-gray);
 }
 
-#testimonials-container
+.page#testimonials
 {
-    display: grid;
-    height: 10rem;
-    grid-template-columns: auto 1fr auto;
-    background-color: var(--bright-color);
+    background-color: var(--davys-gray);
+    color: var(--chili-red);
 }
 
-.testimonial
+.page#order
 {
-    align-self: center;
-    justify-self: center;
-    font-size: x-large;
-    width: 75vw;
+    background-color: var(--khaki);
+    color: var(--davys-gray);
 }
 
-#order
-{
-    display: grid;
-    grid-template-rows: 10rem auto auto;
-    background-color: var(--soft-color);
-}
-
-#order > article
-{
-    display: grid;
-    justify-self: center;
-    margin: 2rem 3rem;
-}
-
-#order > article > h2, h6
-{
-    justify-self: center;
-}
-
-#order > article > ul
-{
-    width: 70vw;
-}
-
-#order-link-block
-{
-    display: grid;
-    grid-template-areas: 
-    "h3 a";
-    margin-bottom: 3rem;
-}
-
-#order-link-block > h3
-{
-    align-self: center;
-    justify-self: center;
-}
-
-#order-link
-{
-    height: 3rem;
-    width: 7rem;
-    align-self: center;
-    background-color: var(--bright-color);
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#map
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-#contact
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#location > span
-{
-    margin: 1rem auto
-}
-
-#branding
-{
-    justify-self: center;
-    align-self: last baseline;
-    grid-column: span 3;
-}
-
-#branding > span
-{
-    margin: auto 6em;
-    margin-bottom: 2rem;
-}
-
-.icon
-{
-    display: none;
-}
-
-@media screen and (max-width: 500px) 
-{
-    body
-    {
-        max-width: 100vw;
-        font-size: medium;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-    }
-
-    main
-    {
-        display: grid;
-        grid-template-rows: auto auto 1fr;
-    }
-
-    section
-    {
-        height: auto;
-        max-width: 100vw;
-        /* min-height: 100vh; */
-    }
-
-    article
-    {
-        font-size: medium;
-    }
-
-    .icon 
-    {
-        display: inline;
-    }
-
-    .nav-link
-    {
-        display: none;
-    }
-
-    #about-links
-    {
-        display: none;
-    }
-
-    #about
-    {
-        max-height: 75vh;
-    }
-
-    #about > article 
-    {
-
-        padding: 1rem;
-    }
-
-    #course-heading
-    {
-        font-size: large;
-        align-self: center;
-        padding: 1rem;
-    }
-
-    .course-headings
-    {
-        font-size: large;
-    }
-
-    #course
-    {
-        display: grid;
-        grid-template-rows: auto auto auto auto auto;
-    }
-
-    .testimonial
-    {
-        font-size: medium;
-        width: 70vw;
-    }
-
-    #testimonials-container
-    {
-        height: 10vh;
-    }
-
-    #course > article
-    {
-        margin: .5rem 5vw
-    }
-
-    #order > article
-    {
-        margin: 1rem 2rem;
-    }
-
-    #lessons > h2
-    {
-        font-size: medium;
-    }
-
-    #materials > h2
-    {
-        font-size: medium;
-    }
-
-    button
-    {
-        margin: .5rem .5rem;
-    }
-
-    #order
-    {
-        display: grid;
-        grid-template-rows: auto 1fr 1fr;
-    }
-}
+@media screen and (max-width: 500px) {}
