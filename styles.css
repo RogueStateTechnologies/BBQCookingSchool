@@ -26,20 +26,31 @@ body
     font-family: var(--patrick-hand);
     color: var(--davys-gray);
 }
-
 header
 {
-
+    display: flex;
+    justify-content: center;
 }
 
-main
+nav:hover .dropdown-items
 {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-footer
+.dropdown-items
 {
+    display: none;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+}
 
+.dropdown-items > a
+{
+    display: flex;
+    justify-content: center;
 }
 
 .page
